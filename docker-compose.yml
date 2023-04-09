@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+     db:
+       image: mysql
+       restart: always
+       environment:
+            MYSQL_ROOT_PASSWORD: example
+     flaskex:
+       image: 9c3f67b509fe
+       restart: always     
+       ports:
+            - "5000:5000"
+       
